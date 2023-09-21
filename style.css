@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Archivo;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 10px 15px;
+    margin: 0;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    z-index: 1010;
+}
+
+#logo {
+    width: 10rem;
+}
+
+form {
+    border: 1px solid #2d2f31;
+    border-radius: 25px;
+    background-color: #f7f9fa;
+    display: flex;
+    align-items: center;
+    flex-grow: 0.4;
+    height: 2rem;
+    padding: 0.3rem 2.4rem 0.3rem 1rem;
+    margin: 0 1.2rem;
+}
+
+.src-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.src-btn picture {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+#src {
+    border: none;
+    background-color:transparent;
+    outline: none;  
+    padding: 0 5px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.rigth-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.car-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#img-car {
+
+    cursor: pointer;
+    
+}
+
+th {
+    padding: 10px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    right:0;
+    top:100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    min-height: 300px;
+    min-width: 300px;
+    margin: 0;
+}
+
+.car-menu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    transition: display 0.5s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+#empty-car {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: black solid;
+    border-width: 1px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#empty-car:hover {
+    background-color:#f3f0fa;
+}
+
+.btn-header-login {
+    border: 1px solid #2d2f31;
+    background-color:white;
+    font-weight: 700;
+    height: 3em;
+    padding: 8px 12px;
+}
+
+.btn-header-signup {
+    border: 1px solid #2d2f31;
+    letter-spacing: 0.5px;
+    background-color:#1c1d1f;
+    color: white;
+    font-weight: 600;
+    height: 3rem;
+    padding: 8px 12px;
+}
+
+.btn-header-login:hover {
+    background-color: #e4e8eb;
+}
+
+.btn-header-signup:hover {
+    background-color: #3e4143;
+}
+
+.billboard-img {
+    width: 100vw;
+}
+
+#billboard {
+    display: flex;
+    align-items: center;
+}
+.billboard-banner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    position: absolute;
+    background-color: white;
+    max-width: 20rem;
+    height: 10rem;
+    left: 4.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    
+}
+
+.billboard-banner-content-title {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.billboard-banner-content-subtitle {
+    line-height: 1.5;
+}
