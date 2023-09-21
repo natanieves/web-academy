@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academy</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header" class="header">
       <div class="logo">
-        <img src="/img/logo.png" alt="logo" />
+        <img src="/img/logo.jpg" alt="logo" id="logo" />
       </div>
       <form action="#" method="">
-        <button type="submit">
-          <img src="/img/lupa.png" alt="" />
+        <button type="submit" class="src-btn">
+          <picture>
+            <img src="/img/lupa.png" alt="lupa" />
+          </picture>
         </button>
         <input
           type="text"
@@ -21,30 +24,40 @@
           placeholder="¿Qué te gustaria aprender?"
         />
       </form>
-      <div class="menu-carrito">
-        <img src="/img/carrito.png" alt="carrito" />
-        <ul class="submenu">
-          <li>
-            <table class="car-list">
-              <thead>
-                <tr>
-                  <th>Imagen</th>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                </tr>
-              </thead>
-            </table>
-            <hr />
-            <a href="#" id="empty-car">Vaciar carrito</a>
-          </li>
-        </ul>
+      <div class="rigth-content">
+        <div class="car-menu">
+          <img src="/img/carrito.png" alt="carrito" id="img-car" />
+          <ul class="submenu">
+            <li>
+              <table class="car-list">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                  </tr>
+                </thead>
+              </table>
+              <hr />
+              <a href="#" id="empty-car">Vaciar carrito</a>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="btn-header-login">Iniciar sesión</button>
+        <button type="submit" class="btn-header-signup">Regístrate</button>
       </div>
-      <a href="#" id="btn-header-login">Iniciar sesión</a>
-      <a href="#" id="btn-header-signup">Registráte</a>
     </header>
-    <div id="billboard" class="billboard">
-      <img src="/img/hero.jpg" alt="hero">
+    <div id="billboard">
+      <img src="/img/billboard .jpg" alt="Image" class="billboard-img" />
+      <div class="billboard-banner">
+        <div class="billboard-banner-content">
+          <h1 class="billboard-banner-content-title">Un aprendizaje interesante</h1>
+          <p class="billboard-banner-content-subtitle">
+            Habilidades para tu presente y tu futuro. Camina con nosotros.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="banner">
       <div class="container">
