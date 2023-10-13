@@ -132,22 +132,25 @@ ul {
 }
 
 .btn-header-signup {
-    border: 1px solid #2d2f31;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.04em;
     background-color:#1c1d1f;
     color: white;
     font-weight: 600;
-    height: 3rem;
-    padding: 8px 12px;
+    height: 3em;
+    padding: 0 12px;
 }
 
 .btn-header-login:hover {
     background-color: #e4e8eb;
+    cursor: pointer;
 }
 
 .btn-header-signup:hover {
     background-color: #3e4143;
+    cursor: pointer;
 }
+
+/*---billboard---*/
 
 .billboard-img {
     width: 100vw;
@@ -174,9 +177,147 @@ ul {
 .billboard-banner-content-title {
     margin-bottom: 0.5rem;
     font-weight: 700;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria;
 }
 
 .billboard-banner-content-subtitle {
     line-height: 1.5;
+}
+/*---banner---*/
+
+.contenido-barra {
+    margin: 1em 0;
+    padding: 2em 1em 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F7F9FA;
+    color: #6A6F73;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    background-size: 30px;
+    text-align: center;
+}
+
+.icon1 {
+    background-image: url(/img/icono1.png);
+
+}
+
+.icon2 {
+    background-image: url(/img/icono2.png);
+}
+
+.icon3 {
+    background-image: url(/img/icono3.png);
+}
+
+
+/*----cards-section--*/
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d1d7dc;
+    padding: 1.5em 3.2rem;
+    margin: 0 2.5em;
+}
+
+.header-course-list {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    gap: 3em;
+}
+
+.course-img {
+    width: 15rem;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin-bottom: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 5px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family:Cambria;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+P {
+    color: #6A6F73;
+    font-size: 0.8rem;
+}
+h3 {
+    font-weight: 700;
+    font-family:'Segoe UI';
+    color: #2D2F31;
+}
+
+.info-card-img {
+    width: 35%;
+}
+
+.btn-card {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    background-color: #1c1d1f;
+    color: white;
+    padding: 0.5em;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+.btn-card:hover {
+    background-color: #3e4143;
+    cursor: pointer;
+}
+
+/*--footer---*/
+.footer {
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1d1f;
+    padding: 1em 3em;
+    font-size: 0.9em;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.9;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+#logo-footer {
+    width: 10rem;
 }
