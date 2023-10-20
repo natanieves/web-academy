@@ -25,21 +25,22 @@
         />
       </form>
       <div class="rigth-content">
-        <div class="car-menu">
+        <div class="car-menu" id="car-menu">
           <img src="/img/carrito.png" alt="carrito" id="img-car" />
           <ul class="submenu">
             <li>
-              <table class="car-list">
+              <table class="car-list" id="car-list">
                 <thead>
                   <tr>
                     <th>Imagen</th>
                     <th>Nombre</th>
                     <th>Precio</th>
                     <th>Cantidad</th>
+                    <th></th>
                   </tr>
                 </thead>
+                <tbody></tbody>
               </table>
-              <hr />
               <a href="#" id="empty-car">Vaciar carrito</a>
             </li>
           </ul>
@@ -87,35 +88,35 @@
       <h1 id="header-course-list" class="header-course-list">
         Una amplia selección de cursos
       </h1>
-      <div class="course-list">
+      <div class="course-list" id="course-list">
         <div class="card">
           <img src="/img/Android.png" class="course-img" alt="course-img" />
           <div class="info-card">
             <h2>Curso básico Android</h2>
             <p>Juan Castro</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">69.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$69.900</span></h3>
+            <button type="submit" class="btn-card" data-id="1">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
           <img src="/img/angular.png" class="course-img" alt="course-img" />
           <div class="info-card">
             <h2>Angular desde Cero </h2>
-            <p>Margarita Díaz</p>
+            <p>Margarita Lopez</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">44.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$44.900</span></h3>
+            <button type="submit" class="btn-card" data-id="2">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
           <img src="/img/flutter.jpg" class="course-img" alt="course-img" />
           <div class="info-card">
             <h2>Escuela de Flutter</h2>
-            <p>Sebastian Rios</p>
+            <p>Jorge Díaz</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">104.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$104.900</span></h3>
+            <button type="submit" class="btn-card" data-id="3">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
@@ -124,8 +125,8 @@
             <h2>HTML y CSS</h2>
             <p>Paula Nieves</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">59.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$59.900</span></h3>
+            <button type="submit" class="btn-card" data-id="4">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
@@ -134,8 +135,8 @@
             <h2>Curso básico iOS</h2>
             <p>Camilo Cardona</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">49.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$49.900/span></h3>
+            <button type="submit" class="btn-card" data-id="5">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
@@ -144,8 +145,8 @@
             <h2>JavaScript desde 0 </h2>
             <p>Carlos Montero</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">54.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$54.900</span></h3>
+            <button type="submit" class="btn-card" data-id="6">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
@@ -154,8 +155,8 @@
             <h2>Curso básico Phyton</h2>
             <p>Juan Peña</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">44.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL <span>$44.900</span></h3>
+            <button type="submit" class="btn-card" data-id="7">Agregar al Carrito</button>
           </div>
         </div>
         <div class="card">
@@ -166,10 +167,10 @@
           />
           <div class="info-card">
             <h2>Programación Web </h2>
-            <p>Jorge Díaz</p>
+            <p>Sebastian Rios</p>
             <img src="/img/estrellas.png" class="info-card-img" alt="calificación estrellas" />
-            <h3 class="price">74.900 COL$</h3>
-            <button type="submit" class="btn-card" >Agregar al Carrito</button>
+            <h3 class="price">COL<span>$74.900</span></h3>
+            <button type="submit" class="btn-card" data-id="8">Agregar al Carrito</button>
           </div>
         </div>
       </div>
@@ -194,5 +195,7 @@
         <img src="/img/logo-footer.jpg" alt="logo" id="logo-footer" />
       </div>
     </div>
+
+    <script src="/app.js"></script>
   </body>
 </html>
