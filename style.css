@@ -79,6 +79,18 @@ form {
 
 th {
     padding: 10px;
+    font-weight: 700;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.amount {
+    padding-left: 40PX;
 }
 
 .submenu {
@@ -89,8 +101,8 @@ th {
     background-color: white;
     padding: 20px;
     z-index: 1;
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 100px;
+    min-width: 100px;
     margin: 0;
 }
 
@@ -104,6 +116,15 @@ th {
 
 ul {
     list-style: none;
+}
+
+.empty-course {
+    background-color: #2d2f31;
+    border-radius: 50%;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 #empty-car {
@@ -269,7 +290,7 @@ P {
     color: #6A6F73;
     font-size: 0.8rem;
 }
-h3 {
+.price span {
     font-weight: 700;
     font-family:'Segoe UI';
     color: #2D2F31;
