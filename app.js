@@ -10,6 +10,13 @@ function loadEventListeners() {
 
     car.addEventListener('click', emptyCourse);
 
+    document.addEventListener('DOMContentLoaded', () => {
+        carItems = JSON.parse ( localStorage.getItem('car')) || [];
+
+        carHtml();
+    })
+
+
     emptyCarBtn.addEventListener('click', () => {
         carItems = [];
 
@@ -28,7 +35,7 @@ function emptyCourse(e) {
     if(e.target.classList.contains('empty-course')) {
         const courseId = e.target.getAttribute('data-id');
 
-        //Elimina del arreglo de articulosCarrito por el data-id
+        
         carItems = carItems.filter(course => course.id !== courseId);
 
         carHtml();
@@ -85,6 +92,12 @@ function carHtml() {
 
             carContent.appendChild(row)
     })
+
+    synStorage();
+}
+
+function synStorage () {
+    localStorage.setItem('car', JSON.stringify(carItems))
 }
 
 function emptyHtml() {
